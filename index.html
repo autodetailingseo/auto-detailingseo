@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Auto Detailing SEO — The #1 Auto Detailing SEO Company</title>
+<meta name="description" content="Double your auto detailing, PPF, window tint & ceramic coating leads in 90 days. 100% automotive-focused SEO, websites, and lead generation." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+<style>
+/* ========== RESET & BASE ========== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0A0E1A;
+  color: #FFFFFF;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; border: none; font-family: inherit; }
+
+/* ========== UTILITY ========== */
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+}
+.section-pad {
+  padding: 100px 0;
+}
+.text-center { text-align: center; }
+.text-secondary { color: #B0B8CC; }
+
+/* ========== GRADIENT TEXT ========== */
+.gradient-text {
+  background: linear-gradient(90deg, #FFFFFF 30%, #00C2FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ========== SECTION TITLES ========== */
+.section-title {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+.section-subtitle {
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  font-weight: 500;
+  color: #B0B8CC;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+/* ========== GLASSMORPHISM CARD ========== */
+.glass-card {
+  background: rgba(26, 31, 46, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.glass-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 40px rgba(0,102,255,0.18);
+  border-color: rgba(0,194,255,0.25);
+}
+
+/* ========== BUTTONS ========== */
+.btn-primary {
+  display: inline-block;
+  padding: 18px 40px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #FF6A00, #FF8C33);
+  box-shadow: 0 4px 25px rgba(255,106,0,0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+.btn-primary:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 35px rgba(255,106,0,0.55);
+}
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 4px 25px rgba(255,106,0,0.35); }
+  50% { box-shadow: 0 4px 45px rgba(255,106,0,0.6), 0 0 60px rgba(255,106,0,0.2); }
+}
+.btn-primary { animation: glowPulse 3s ease-in-out infinite; }
+.btn-primary:hover { animation: none; }
+
+.btn-ghost {
+  display: inline-block;
+  padding: 18px 40px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #00C2FF;
+  background: transparent;
+  border: 2px solid #00C2FF;
+  transition: all 0.3s ease;
+}
+.btn-ghost:hover {
+  background: rgba(0,194,255,0.1);
+  box-shadow: 0 0 25px rgba(0,194,255,0.25);
+  transform: translateY(-2px);
+}
+
+/* ========== SECTION DIVIDER ========== */
+.section-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00C2FF, #0066FF, transparent);
+  border: none;
+  margin: 0;
+  opacity: 0.35;
+}
+
+/* ========== SCROLL ANIMATION ========== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* ============================
+   SECTION 1 — HERO
+   ============================ */
+#hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0A0E1A 0%, #0D1B3E 60%, #0A0E1A 100%);
+  overflow: hidden;
+}
+#hero-particles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 60px 24px 80px;
+  max-width: 960px;
+}
+.hero-content h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.hero-content h1 .shimmer {
+  background: linear-gradient(90deg, #FFFFFF 0%, #00C2FF 25%, #FFFFFF 50%, #00C2FF 75%, #FFFFFF 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 6s linear infinite;
+}
+.hero-content h2 {
+  font-size: clamp(1.1rem, 2.8vw, 1.75rem);
+  font-weight: 600;
+  color: #B0B8CC;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+/* Trust badges */
+.trust-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #B0B8CC;
+}
+.trust-badge .check {
+  color: #00C2FF;
+  font-size: 1.15rem;
+}
+
+/* CTA row */
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.social-proof-text {
+  font-size: 0.85rem;
+  color: #6B7590;
+  margin-bottom: 60px;
+}
+
+/* Stats row */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 820px;
+  margin: 0 auto;
+}
+.stat-item {
+  text-align: center;
+}
+.stat-number {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  background: linear-gradient(135deg, #00C2FF, #0066FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.stat-label {
+  font-size: 0.85rem;
+  color: #6B7590;
+  margin-top: 4px;
+}
+
+/* ============================
+   SECTION 2 — WHY US / USP
+   ============================ */
+#why-us {
+  background: linear-gradient(180deg, #0A0E1A 0%, #0D1B3E 50%, #0A0E1A 100%);
+}
+.usp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+.usp-card {
+  padding: 36px 32px;
+  border-left: 3px solid transparent;
+  border-image: linear-gradient(180deg, #00C2FF, #0066FF) 1;
+}
+.usp-icon {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.usp-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #fff;
+}
+.usp-card p {
+  font-size: 0.95rem;
+  color: #B0B8CC;
+  line-height: 1.65;
+}
+
+/* ============================
+   SECTION 3 — CASE STUDIES
+   ============================ */
+#case-studies {
+  background: linear-gradient(180deg, #0A0E1A, #0D1322);
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+.video-card {
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.video-card .glass-inner {
+  padding: 0;
+}
+.video-thumb {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  background: linear-gradient(135deg, #111827, #1a2540);
+  overflow: hidden;
+}
+.video-thumb img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.video-card:hover .video-thumb img {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: rgba(0,102,255,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #fff;
+  box-shadow: 0 0 30px rgba(0,102,255,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2;
+}
+.video-card:hover .play-btn {
+  transform: translate(-50%, -50%) scale(1.12);
+  box-shadow: 0 0 50px rgba(0,102,255,0.7);
+}
+.video-label {
+  padding: 18px 22px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Video Lightbox Modal */
+.video-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.video-modal-overlay.active { display: flex; }
+.video-modal-inner {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+}
+.video-modal-inner .close-modal {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+.video-modal-inner .close-modal:hover { background: rgba(255,255,255,0.1); }
+.video-modal-inner .video-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #000;
+}
+.video-modal-inner iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ============================
+   SECTION 4 — WHO WE ARE
+   ============================ */
+#who-we-are {
+  background: linear-gradient(180deg, #0D1322, #0A0E1A);
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.about-image-wrap {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 0 50px rgba(0,194,255,0.2);
+  border: 2px solid rgba(0,194,255,0.15);
+}
+.about-image-wrap img {
+  width: 100%;
+  display: block;
+  border-radius: 22px;
+}
+.about-text h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.about-text h3 {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: 600;
+  color: #00C2FF;
+  margin-bottom: 24px;
+}
+.about-text p {
+  font-size: 1rem;
+  color: #B0B8CC;
+  line-height: 1.75;
+  margin-bottom: 32px;
+}
+
+/* ============================
+   SECTION 5 — SERVICES
+   ============================ */
+#services {
+  background: linear-gradient(180deg, #0A0E1A, #0D1B3E, #0A0E1A);
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+.service-card {
+  overflow: hidden;
+  position: relative;
+}
+.service-img-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+.service-img-wrap img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.service-card:hover .service-img-wrap img {
+  transform: scale(1.06);
+}
+.service-icon-badge {
+  position: absolute;
+  bottom: -20px;
+  left: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #0066FF, #00C2FF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  z-index: 3;
+  box-shadow: 0 4px 20px rgba(0,102,255,0.4);
+}
+.service-body {
+  padding: 36px 28px 28px;
+}
+.service-body h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.service-body p {
+  font-size: 0.93rem;
+  color: #B0B8CC;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+.service-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #00C2FF;
+  transition: color 0.3s ease;
+}
+.service-link:hover { color: #fff; }
+.service-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 8px 40px rgba(0,102,255,0.18);
+  border-color: rgba(0,194,255,0.25);
+}
+
+/* ============================
+   SECTION 6 — HOW WE WORK
+   ============================ */
+#how-we-work {
+  background: linear-gradient(180deg, #0A0E1A, #0D1322);
+}
+.process-timeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  position: relative;
+}
+.process-timeline::before {
+  content: '';
+  position: absolute;
+  top: 48px;
+  left: 12%;
+  right: 12%;
+  height: 3px;
+  background: linear-gradient(90deg, #00C2FF, #0066FF, #00C2FF);
+  z-index: 0;
+  border-radius: 2px;
+  opacity: 0.5;
+}
+@keyframes lineGrow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+.process-step {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 24px 18px 28px;
+}
+.step-number {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0066FF, #00C2FF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 0 auto 20px;
+  box-shadow: 0 0 30px rgba(0,102,255,0.35);
+  position: relative;
+  z-index: 2;
+}
+.process-step h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.process-step p {
+  font-size: 0.88rem;
+  color: #B0B8CC;
+  line-height: 1.65;
+}
+
+/* ============================
+   SECTION 7 — CTA BANNER
+   ============================ */
+#cta-banner {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0A0E1A 0%, #0D1B3E 40%, #1a1230 70%, #0A0E1A 100%);
+}
+#cta-particles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.cta-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.cta-content h2 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.cta-content p {
+  font-size: 1.05rem;
+  color: #B0B8CC;
+  max-width: 680px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+/* ============================
+   SECTION 8 — WHY CHOOSE US
+   ============================ */
+#why-choose {
+  background: linear-gradient(180deg, #0A0E1A, #0D1B3E, #0A0E1A);
+}
+.why-choose-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+.why-choose-text h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.why-choose-text h3 {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: 600;
+  color: #00C2FF;
+  margin-bottom: 24px;
+}
+.why-choose-text p {
+  font-size: 1rem;
+  color: #B0B8CC;
+  line-height: 1.75;
+}
+.feature-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.feature-card {
+  padding: 28px 24px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+.feature-icon {
+  min-width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(0,102,255,0.2), rgba(0,194,255,0.15));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+.feature-card h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.feature-card p {
+  font-size: 0.9rem;
+  color: #B0B8CC;
+  line-height: 1.65;
+}
+
+/* ============================
+   SECTION 9 — REVIEWS CAROUSEL
+   ============================ */
+#reviews {
+  background: linear-gradient(180deg, #0A0E1A, #0D1322, #0A0E1A);
+  overflow: hidden;
+}
+.carousel-container {
+  position: relative;
+  max-width: 820px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.review-card {
+  min-width: 100%;
+  padding: 44px 40px 36px;
+  text-align: center;
+}
+.review-stars {
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+  color: #FFB800;
+  letter-spacing: 4px;
+}
+.review-quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #d0d7e8;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.review-author {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fff;
+}
+.review-shop {
+  font-size: 0.85rem;
+  color: #6B7590;
+  margin-top: 4px;
+}
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 30px;
+}
+.carousel-arrow {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #fff;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.carousel-arrow:hover {
+  background: rgba(0,194,255,0.15);
+  border-color: rgba(0,194,255,0.4);
+}
+.carousel-dots {
+  display: flex;
+  gap: 8px;
+}
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.carousel-dot.active {
+  background: #00C2FF;
+  box-shadow: 0 0 12px rgba(0,194,255,0.5);
+  width: 28px;
+  border-radius: 5px;
+}
+
+/* ============================
+   SECTION 10 — FAQ
+   ============================ */
+#faq {
+  background: linear-gradient(180deg, #0A0E1A, #0D1B3E, #0A0E1A);
+}
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 60px;
+  align-items: start;
+}
+.faq-left h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.faq-left h3 {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 500;
+  color: #B0B8CC;
+}
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.faq-item {
+  background: rgba(26, 31, 46, 0.6);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.faq-item.active {
+  border-color: rgba(0,194,255,0.3);
+  box-shadow: 0 0 20px rgba(0,102,255,0.1);
+}
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.faq-question:hover { background: rgba(255,255,255,0.03); }
+.faq-toggle {
+  min-width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(0,194,255,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #00C2FF;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.faq-item.active .faq-toggle {
+  transform: rotate(45deg);
+  background: rgba(0,194,255,0.25);
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+.faq-answer-inner {
+  padding: 0 24px 20px;
+  font-size: 0.93rem;
+  color: #B0B8CC;
+  line-height: 1.7;
+}
+
+/* ============================
+   SECTION 11 — FINAL CTA
+   ============================ */
+#final-cta {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0A0E1A 0%, #141a38 30%, #1a1230 60%, #0A0E1A 100%);
+}
+#final-cta-particles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.final-cta-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.final-cta-content h2 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.final-cta-content p {
+  font-size: 1.05rem;
+  color: #B0B8CC;
+  max-width: 720px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1280px) {
+  .container { max-width: 1080px; }
+}
+@media (max-width: 1024px) {
+  .stats-row { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .usp-grid { grid-template-columns: 1fr; }
+  .video-grid { grid-template-columns: 1fr; }
+  .about-grid { grid-template-columns: 1fr; gap: 40px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .process-timeline { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .process-timeline::before { display: none; }
+  .why-choose-grid { grid-template-columns: 1fr; gap: 40px; }
+  .faq-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+@media (max-width: 768px) {
+  .section-pad { padding: 70px 0; }
+  .hero-content { padding: 40px 16px 60px; }
+  .hero-content h1 { font-size: clamp(2rem, 8vw, 3rem); }
+  .stats-row { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .trust-badges { gap: 12px; }
+  .trust-badge { font-size: 0.85rem; }
+  .cta-row { flex-direction: column; align-items: center; }
+  .btn-primary, .btn-ghost { width: 100%; max-width: 320px; text-align: center; }
+  .process-timeline { grid-template-columns: 1fr; }
+  .review-card { padding: 30px 20px 28px; }
+  .review-quote { font-size: 1rem; }
+  .carousel-arrow { width: 38px; height: 38px; font-size: 0.95rem; }
+}
+@media (max-width: 480px) {
+  .stats-row { grid-template-columns: 1fr 1fr; }
+  .stat-number { font-size: 1.6rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============================
+     ⭐ SECTION 1 — HERO SECTION
+     ============================ -->
+<section id="hero">
+  <canvas id="hero-particles"></canvas>
+  <div class="hero-content">
+    <h1 class="reveal"><span class="shimmer">The #1 Auto Detailing SEO Company</span></h1>
+    <h2 class="reveal reveal-delay-1">Double Your Auto Detailing, PPF, Window Tint &amp; Coating Leads in 90 Days</h2>
+
+    <div class="trust-badges reveal reveal-delay-2">
+      <span class="trust-badge"><span class="check">✅</span> 100% Automotive Focused</span>
+      <span class="trust-badge"><span class="check">✅</span> 90-Day Growth Guarantee</span>
+      <span class="trust-badge"><span class="check">✅</span> No Contracts</span>
+    </div>
+
+    <div class="cta-row reveal reveal-delay-2">
+     <a href="https://autodetailingseo.com/contact-us/" class="btn-primary">Get My Free Growth Plan</a>
+      <a href="#case-studies" class="btn-ghost">See Our Case Studies</a>
+    </div>
+    <p class="social-proof-text reveal reveal-delay-3">Trusted by 50+ Automotive Shop Owners Across the United States</p>
+
+    <div class="stats-row reveal reveal-delay-3">
+      <div class="stat-item">
+        <div class="stat-number"><span class="counter" data-target="200">0</span>%+</div>
+        <div class="stat-label">Avg Lead Increase</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number"><span class="counter" data-target="90">0</span></div>
+        <div class="stat-label">Days to Results</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number"><span class="counter" data-target="50">0</span>+</div>
+        <div class="stat-label">Shops Helped</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number"><span class="counter" data-target="100">0</span>%</div>
+        <div class="stat-label">Automotive Niche</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ===================================
+     ⭐ SECTION 2 — WHY US / USP CARDS
+     =================================== -->
+<section id="why-us" class="section-pad">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:50px;">
+      <h2 class="section-title gradient-text reveal">Why Auto Detailing Shops Choose Us</h2>
+      <p class="section-subtitle reveal reveal-delay-1">Everything we do is built for one niche — automotive service businesses.</p>
+    </div>
+    <div class="usp-grid">
+      <div class="glass-card usp-card reveal reveal-delay-1">
+        <span class="usp-icon">🎯</span>
+        <h3>Industry-Specialized Automotive SEO</h3>
+        <p>We don't dabble in automotive — it's all we do. Every strategy, keyword, and campaign is tailored for the way car owners search for detailing, PPF, tint, and coating services.</p>
+      </div>
+      <div class="glass-card usp-card reveal reveal-delay-2">
+        <span class="usp-icon">📈</span>
+        <h3>Revenue-Focused Lead Generation (Not Just Rankings)</h3>
+        <p>Rankings are nice, but leads and booked jobs pay the bills. We measure success by real revenue outcomes — phone calls, form fills, and jobs on your schedule.</p>
+      </div>
+      <div class="glass-card usp-card reveal reveal-delay-3">
+        <span class="usp-icon">🚀</span>
+        <h3>Proven 90-Day Local Growth Framework</h3>
+        <p>Our proprietary framework is designed to deliver measurable results within 90 days. No more waiting 6–12 months and hoping. We move fast with a proven playbook.</p>
+      </div>
+      <div class="glass-card usp-card reveal reveal-delay-4">
+        <span class="usp-icon">🏆</span>
+        <h3>Reputation &amp; Authority Building Engine</h3>
+        <p>We help you become the go-to shop in your market. Through review management, content authority, and local dominance, we build your brand as the undeniable local leader.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ============================================
+     ⭐ SECTION 3 — CASE STUDIES (VIDEO SECTION)
+     — REPLACE VIDEO THUMBNAILS WITH REAL URLS
+     ============================================ -->
+<section id="case-studies" class="section-pad">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:50px;">
+      <h2 class="section-title gradient-text reveal">Recent Case Studies</h2>
+      <h3 class="section-subtitle reveal reveal-delay-1">See How Detailing &amp; Tint Shops Are Scaling With Us.</h3>
+    </div>
+    <div class="video-grid">
+      <div class="glass-card video-card reveal reveal-delay-1" data-video="https://www.youtube.com/embed/ZoBtciJMeRo" onclick="openVideoModal(this)">
+        <div class="video-thumb">
+          <img src="https://img.youtube.com/vi/ZoBtciJMeRo/hqdefault.jpg" alt="Case Study 1 — Auto Detailing SEO Results" />
+          <div class="play-btn">▶</div>
+        </div>
+        <p class="video-label">Case Study #1 — PPF Shop Lead Growth</p>
+      </div>
+      <div class="glass-card video-card reveal reveal-delay-2" data-video="https://www.youtube.com/embed/j3oePaMc688" onclick="openVideoModal(this)">
+        <div class="video-thumb">
+          <img src="https://img.youtube.com/vi/j3oePaMc688/hqdefault.jpg" alt="Case Study 2 — Detailing SEO Results" />
+          <div class="play-btn">▶</div>
+        </div>
+        <p class="video-label">Case Study #2 — Detailing Shop Domination</p>
+      </div>
+      <div class="glass-card video-card reveal reveal-delay-3" data-video="https://www.youtube.com/embed/Bof3QZT0b2g" onclick="openVideoModal(this)">
+        <div class="video-thumb">
+          <img src="https://img.youtube.com/vi/Bof3QZT0b2g/hqdefault.jpg" alt="Case Study 3 — Window Tint SEO Results" />
+          <div class="play-btn">▶</div>
+        </div>
+        <p class="video-label">Case Study #3 — Window Tint Shop Scaling</p>
+      </div>
+      <div class="glass-card video-card reveal reveal-delay-4" data-video="https://www.youtube.com/embed/K2jd8BZHAxA" onclick="openVideoModal(this)">
+        <div class="video-thumb">
+          <img src="https://img.youtube.com/vi/K2jd8BZHAxA/hqdefault.jpg" alt="Case Study 4 — Ceramic Coating SEO Results" />
+          <div class="play-btn">▶</div>
+        </div>
+        <p class="video-label">Case Study #4 — Ceramic Coating Revenue Boost</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Video Lightbox Modal -->
+<div class="video-modal-overlay" id="videoModal" onclick="closeVideoModal(event)">
+  <div class="video-modal-inner" onclick="event.stopPropagation()">
+    <button class="close-modal" onclick="closeVideoModal()" aria-label="Close video">✕</button>
+    <div class="video-wrapper">
+      <iframe id="videoIframe" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider" />
+
+<!-- ===================================
+     ⭐ SECTION 4 — WHO WE ARE
+     — REPLACE [WHO_WE_ARE_IMAGE_URL] WITH REAL URL
+     =================================== -->
+<section id="who-we-are" class="section-pad">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image-wrap reveal">
+        <img src="https://autodetailingseo.com/wp-content/uploads/2026/02/simle-pic.png" alt="About Us - Auto Detailing SEO" class="about-image" />
+      </div>
+      <div class="about-text reveal reveal-delay-2">
+        <h2 class="gradient-text">Who We Are</h2>
+        <h3>From Learning SEO… To Helping Automotive Shops Win Locally.</h3>
+        <p>I don't believe in generic marketing. I believe in industry knowledge, real data, and strategies built around how automotive customers actually choose a shop. When you work with me, you're not working with a random marketing team — you're working with someone who understands your industry, your challenges, and your growth goals.</p>
+        <a href="#" class="btn-ghost" style="padding:14px 32px; font-size:0.95rem;">Learn More About Our Story</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ==========================================
+     ⭐ SECTION 5 — WHAT WE DO / SERVICES
+     — REPLACE SERVICE IMAGES WITH REAL URLS
+     ========================================== -->
+<section id="services" class="section-pad">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:50px;">
+      <h2 class="section-title gradient-text reveal">What We Do</h2>
+      <h3 class="section-subtitle reveal reveal-delay-1">Our Core Automotive Marketing Services.</h3>
+    </div>
+    <div class="services-grid">
+
+      <div class="glass-card service-card reveal reveal-delay-1">
+        <div class="service-img-wrap">
+          <img src="https://autodetailingseo.com/wp-content/uploads/2026/02/mobile-with-google-maps-1-1-scaled.jpg" alt="Local SEO & Google Business Profile Management" />
+          <div class="service-icon-badge">📍</div>
+        </div>
+        <div class="service-body">
+          <h3>Local SEO &amp; Google Business Profile Management</h3>
+          <p>Dominate local search results and the Google Map Pack. We optimize your GBP, build local citations, and create a complete local SEO strategy designed to put your shop in front of high-intent customers searching for your services right now.</p>
+          <a href="#" class="service-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="glass-card service-card reveal reveal-delay-2">
+        <div class="service-img-wrap">
+          <img src="https://autodetailingseo.com/wp-content/uploads/2026/02/daniel-korpai-pKRNxEguRgM-unsplash-1-scaled.jpg" alt="Automotive Website Development" />
+          <div class="service-icon-badge">💻</div>
+        </div>
+        <div class="service-body">
+          <h3>Automotive Website Development</h3>
+          <p>Your website is your #1 sales tool. We build fast, conversion-optimized websites specifically for detailing, PPF, tint, and coating shops — designed to turn visitors into booked appointments.</p>
+          <a href="#" class="service-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="glass-card service-card reveal reveal-delay-3">
+        <div class="service-img-wrap">
+          <img src="https://autodetailingseo.com/wp-content/uploads/2026/02/content-concept-laptop-screen-1-scaled.jpg" alt="Automotive Content & Authority Building" />
+          <div class="service-icon-badge">✍️</div>
+        </div>
+        <div class="service-body">
+          <h3>Automotive Content &amp; Authority Building</h3>
+          <p>Establish your shop as the local authority. We create industry-specific content, service pages, and link-building strategies that increase your rankings and build trust with potential customers.</p>
+          <a href="#" class="service-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="glass-card service-card reveal reveal-delay-4">
+        <div class="service-img-wrap">
+          <img src="https://autodetailingseo.com/wp-content/uploads/2026/02/online-marketing-commercial-connection-technology-1-scaled.jpg" alt="Google Ads & Paid Lead Generation" />
+          <div class="service-icon-badge">🎯</div>
+        </div>
+        <div class="service-body">
+          <h3>Google Ads &amp; Paid Lead Generation</h3>
+          <p>Get leads now, not in 6 months. Our targeted Google Ads campaigns are built specifically for automotive shops, ensuring every dollar of your ad spend goes toward high-intent buyers in your local market.</p>
+          <a href="#" class="service-link">Learn More →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ===================================
+     ⭐ SECTION 6 — HOW WE WORK
+     =================================== -->
+<section id="how-we-work" class="section-pad">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:60px;">
+      <h2 class="section-title gradient-text reveal">How We Work</h2>
+      <h3 class="section-subtitle reveal reveal-delay-1">Our Simple, Proven Process For Growing Automotive Businesses</h3>
+    </div>
+    <div class="process-timeline">
+      <div class="glass-card process-step reveal reveal-delay-1">
+        <div class="step-number">1</div>
+        <h3>Discovery &amp; Audit</h3>
+        <p>We analyze your market, competitors, current online presence, and revenue gaps to build a precise growth plan.</p>
+      </div>
+      <div class="glass-card process-step reveal reveal-delay-2">
+        <div class="step-number">2</div>
+        <h3>Strategy &amp; Roadmap</h3>
+        <p>You receive a custom 90-day strategy specifically built for your shop, market, and growth goals.</p>
+      </div>
+      <div class="glass-card process-step reveal reveal-delay-3">
+        <div class="step-number">3</div>
+        <h3>Execution &amp; Optimization</h3>
+        <p>We implement SEO, content, GBP, and ads — then continuously optimize based on real data and results.</p>
+      </div>
+      <div class="glass-card process-step reveal reveal-delay-4">
+        <div class="step-number">4</div>
+        <h3>Scale &amp; Dominate</h3>
+        <p>As results grow, we scale what's working to help you own your local market and maximize ROI.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ================================================
+     ⭐ SECTION 7 — CTA BANNER (LEAD MAGNET)
+     ================================================ -->
+<section id="cta-banner" class="section-pad">
+  <canvas id="cta-particles"></canvas>
+  <div class="container">
+    <div class="cta-content reveal">
+      <h2 class="gradient-text">Ready To Get More Leads &amp; Booked Jobs For Your Shop?</h2>
+      <p>Stop guessing with marketing. Get a clear growth plan built specifically for your detailing, PPF, tint, or coating business — based on your market, competitors, and real revenue opportunities.</p>
+      <a href="https://autodetailingseo.com/contact-us/" class="btn-primary" style="font-size:1.1rem; padding: 20px 48px;">Get My Free Growth Plan Today →</a>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ================================================
+     ⭐ SECTION 8 — WHY CHOOSE US
+     ================================================ -->
+<section id="why-choose" class="section-pad">
+  <div class="container">
+    <div class="why-choose-grid">
+      <div class="why-choose-text reveal">
+        <h2 class="gradient-text">Why Choose Us</h2>
+        <h3>Built For Automotive Shops That Want Real Growth — Not Generic Marketing</h3>
+       <p>We ( <a href="https://autodetailingseo.com/" target="_blank" rel="noopener noreferrer" style="color: yellow;">Auto Detailing SEO</a> ) focus exclusively on automotive businesses — PPF, Window Tint, Ceramic Coating, Car Audio &amp; Detailing. Every strategy is built to increase visibility, generate high-intent leads, and help you win your local market using proven data, real campaign experience, and industry-specific marketing systems.</p>
+      </div>
+      <div class="feature-stack">
+        <div class="glass-card feature-card reveal reveal-delay-1">
+          <div class="feature-icon">🚗</div>
+          <div>
+            <h4>Automotive Industry Only</h4>
+            <p>We work with only automotive shops — no dentists, restaurants, or random clients. 100% of our strategies are built around how car owners find and choose automotive service providers.</p>
+          </div>
+        </div>
+        <div class="glass-card feature-card reveal reveal-delay-2">
+          <div class="feature-icon">💰</div>
+          <div>
+            <h4>Leads &amp; Revenue Focused</h4>
+            <p>We don't celebrate page-1 rankings — we celebrate your phone ringing and your schedule filling up. Every strategy is tied back to measurable lead and revenue outcomes.</p>
+          </div>
+        </div>
+        <div class="glass-card feature-card reveal reveal-delay-3">
+          <div class="feature-icon">🤝</div>
+          <div>
+            <h4>Clear, Honest Partnership</h4>
+            <p>No jargon. No smoke and mirrors. You get clear reporting, honest communication, and a team that treats your business growth like their own.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- =======================================
+     ⭐ SECTION 9 — CUSTOMER REVIEWS
+     ======================================= -->
+<section id="reviews" class="section-pad">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:50px;">
+      <h2 class="section-title gradient-text reveal">Customer Reviews</h2>
+      <h3 class="section-subtitle reveal reveal-delay-1">See Why Automotive Shops Choose To Work With Us</h3>
+    </div>
+    <div class="carousel-container reveal reveal-delay-2">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="glass-card review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-quote">"Working with Auto Detailing SEO transformed our lead flow completely. We went from 5 leads/week to over 25 in just 60 days!"</p>
+          <p class="review-author">James R.</p>
+          <p class="review-shop">Owner @ Elite PPF Studio</p>
+        </div>
+        <div class="glass-card review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-quote">"Our Google Business Profile is now the #1 ranked detailing shop in our city. The results speak for themselves."</p>
+          <p class="review-author">Marcus T.</p>
+          <p class="review-shop">Owner @ ProShine Detailing</p>
+        </div>
+        <div class="glass-card review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-quote">"Finally an SEO company that actually understands the detailing industry. No fluff, just real results."</p>
+          <p class="review-author">Kevin L.</p>
+          <p class="review-shop">Owner @ Tint Masters Co.</p>
+        </div>
+        <div class="glass-card review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-quote">"Booked out 3 weeks in advance after just 90 days. Incredible ROI on our investment."</p>
+          <p class="review-author">David M.</p>
+          <p class="review-shop">Owner @ Ceramic Coat Pros</p>
+        </div>
+      </div>
+      <div class="carousel-nav">
+        <button class="carousel-arrow" id="prevBtn" aria-label="Previous review">‹</button>
+        <div class="carousel-dots" id="carouselDots"></div>
+        <button class="carousel-arrow" id="nextBtn" aria-label="Next review">›</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ========================================
+     ⭐ SECTION 10 — FAQ / Q&A
+     ======================================== -->
+<section id="faq" class="section-pad">
+  <div class="container">
+    <div class="faq-grid">
+      <div class="faq-left reveal">
+        <h2 class="gradient-text">Question &amp; Answer</h2>
+        <h3>Common Questions About Our Automotive Marketing Services</h3>
+      </div>
+      <div class="faq-list reveal reveal-delay-2">
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What types of automotive businesses do you work with?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">We work exclusively with automotive service businesses including auto detailing shops, PPF installers, window tinting companies, ceramic coating specialists, and car audio shops. Our entire methodology is built around the automotive niche.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>How long before I see results?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Most clients see meaningful improvements in Google rankings and lead volume within the first 60–90 days. Our 90-Day Local Growth Framework is specifically designed to generate early wins while building long-term dominance.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Do you offer contracts?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">No long-term contracts. We believe our results should be the reason you stay. We work on a month-to-month basis after an initial onboarding period.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What makes you different from other SEO agencies?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">We work exclusively in the automotive niche. We're not a generalist agency that happens to take automotive clients — we specialize in this industry. That means faster results, better strategies, and a team that truly understands your business.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>How do you measure success?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">We measure success by leads generated, phone calls, form submissions, booked jobs, and ultimately, revenue growth — not just rankings or traffic vanity metrics.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ==========================================
+     ⭐ SECTION 11 — FINAL CTA BANNER
+     ========================================== -->
+<section id="final-cta" class="section-pad">
+  <canvas id="final-cta-particles"></canvas>
+  <div class="container">
+    <div class="final-cta-content reveal">
+      <h2 class="gradient-text">Turn Your Website, Google &amp; AI Presence Into A Lead Machine</h2>
+      <p>Your potential customers are searching for your services right now. Make sure they find you — not your competitor. Let's build the growth system your shop deserves.</p>
+      <div class="cta-row">
+        <a href="#" class="btn-primary" style="font-size:1.05rem;">Start Growing My Shop →</a>
+        <a href="#services" class="btn-ghost">View Our Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========== ALL JAVASCRIPT ========== -->
+<script>
+(function() {
+  'use strict';
+
+  /* ================================
+     INTERSECTION OBSERVER — SCROLL REVEAL
+     ================================ */
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  /* ================================
+     ANIMATED COUNTERS
+     ================================ */
+  let countersAnimated = false;
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !countersAnimated) {
+        countersAnimated = true;
+        document.querySelectorAll('.counter').forEach(counter => {
+          const target = parseInt(counter.getAttribute('data-target'));
+          const duration = 2000;
+          const start = performance.now();
+          function update(now) {
+            const elapsed = now - start;
+            const progress = Math.min(elapsed / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            counter.textContent = Math.floor(eased * target);
+            if (progress < 1) requestAnimationFrame(update);
+            else counter.textContent = target;
+          }
+          requestAnimationFrame(update);
+        });
+      }
+    });
+  }, { threshold: 0.3 });
+
+  const statsRow = document.querySelector('.stats-row');
+  if (statsRow) counterObserver.observe(statsRow);
+
+  /* ================================
+     PARTICLE CANVAS SYSTEM
+     ================================ */
+  function initParticles(canvasId, particleCount) {
+    const canvas = document.getElementById(canvasId);
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    let animId;
+
+    function resize() {
+      const parent = canvas.parentElement;
+      canvas.width = parent.offsetWidth;
+      canvas.height = parent.offsetHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    function createParticle() {
+      return {
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: Math.random() * 2 + 0.5,
+        vx: (Math.random() - 0.5) * 0.4,
+        vy: (Math.random() - 0.5) * 0.4,
+        alpha: Math.random() * 0.5 + 0.15,
+        color: Math.random() > 0.5 ? '0,194,255' : '0,102,255'
+      };
+    }
+
+    for (let i = 0; i < particleCount; i++) {
+      particles.push(createParticle());
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => {
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(' + p.color + ',' + p.alpha + ')';
+        ctx.fill();
+        // glow
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius * 3, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(' + p.color + ',' + (p.alpha * 0.15) + ')';
+        ctx.fill();
+      });
+
+      // Draw connection lines between nearby particles
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 120) {
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.strokeStyle = 'rgba(0,194,255,' + (0.08 * (1 - dist / 120)) + ')';
+            ctx.lineWidth = 0.5;
+            ctx.stroke();
+          }
+        }
+      }
+      animId = requestAnimationFrame(draw);
+    }
+    draw();
+  }
+
+  initParticles('hero-particles', 60);
+  initParticles('cta-particles', 40);
+  initParticles('final-cta-particles', 40);
+
+  /* ================================
+     VIDEO LIGHTBOX MODAL
+     ================================ */
+  window.openVideoModal = function(card) {
+    const videoUrl = card.getAttribute('data-video');
+    const iframe = document.getElementById('videoIframe');
+    iframe.src = videoUrl + '?autoplay=1&rel=0';
+    document.getElementById('videoModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  };
+
+  window.closeVideoModal = function(e) {
+    if (e && e.target !== document.getElementById('videoModal')) return;
+    const iframe = document.getElementById('videoIframe');
+    iframe.src = '';
+    document.getElementById('videoModal').classList.remove('active');
+    document.body.style.overflow = '';
+  };
+  // also close if the overlay (not inner) is passed as event
+  document.getElementById('videoModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+      window.closeVideoModal();
+    }
+  });
+
+  // ESC key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') window.closeVideoModal();
+  });
+
+  /* ================================
+     REVIEWS CAROUSEL
+     ================================ */
+  const track = document.getElementById('carouselTrack');
+  const dotsContainer = document.getElementById('carouselDots');
+  const cards = track ? track.querySelectorAll('.review-card') : [];
+  let currentSlide = 0;
+  let autoplayInterval;
+
+  // Build dots
+  cards.forEach(function(_, i) {
+    const dot = document.createElement('button');
+    dot.classList.add('carousel-dot');
+    dot.setAttribute('aria-label', 'Go to review ' + (i + 1));
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', function() { goToSlide(i); });
+    dotsContainer.appendChild(dot);
+  });
+
+  function goToSlide(index) {
+    currentSlide = index;
+    track.style.transform = 'translateX(-' + (currentSlide * 100) + '%)';
+    dotsContainer.querySelectorAll('.carousel-dot').forEach(function(d, i) {
+      d.classList.toggle('active', i === currentSlide);
+    });
+  }
+
+  function nextSlide() { goToSlide((currentSlide + 1) % cards.length); }
+  function prevSlide() { goToSlide((currentSlide - 1 + cards.length) % cards.length); }
+
+  document.getElementById('nextBtn').addEventListener('click', function() { nextSlide(); resetAutoplay(); });
+  document.getElementById('prevBtn').addEventListener('click', function() { prevSlide(); resetAutoplay(); });
+
+  function startAutoplay() { autoplayInterval = setInterval(nextSlide, 4000); }
+  function resetAutoplay() { clearInterval(autoplayInterval); startAutoplay(); }
+  startAutoplay();
+
+  // Pause on hover
+  var carouselContainer = document.querySelector('.carousel-container');
+  if (carouselContainer) {
+    carouselContainer.addEventListener('mouseenter', function() { clearInterval(autoplayInterval); });
+    carouselContainer.addEventListener('mouseleave', startAutoplay);
+  }
+
+  /* ================================
+     FAQ ACCORDION
+     ================================ */
+  window.toggleFaq = function(btn) {
+    const item = btn.parentElement;
+    const answer = item.querySelector('.faq-answer');
+    const isActive = item.classList.contains('active');
+
+    // Close all
+    document.querySelectorAll('.faq-item').forEach(function(fi) {
+      fi.classList.remove('active');
+      fi.querySelector('.faq-answer').style.maxHeight = '0';
+    });
+
+    if (!isActive) {
+      item.classList.add('active');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+    }
+  };
+
+})();
+</script>
+
+</body>
+</html>
